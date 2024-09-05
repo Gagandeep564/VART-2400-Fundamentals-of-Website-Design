@@ -1,0 +1,26 @@
+li{
+    color:green;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-style: italic; 
+    text-align: left;
+    /* text-align: right, left, center is used to change the position of a particular text. */
+}
+
+h1{ 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 100px;
+    color:rgba(13, 169, 81, 0.803); 
+    margin-bottom: 10px;
+    padding-bottom: 5px; 
+    line-height: 60px;
+    /* used to comment in css */
+    text-align: center;
+}
+
+body{
+    background-color:blanchedalmond;
+    width: 1000px; 
+    margin: 0 auto 0 auto; 
+   
+}
