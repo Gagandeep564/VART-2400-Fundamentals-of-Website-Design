@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: "Antic Didone"; 
+    color: rgb(85, 36, 0);
+    text-align: center;
+
+}
+
+h1{ 
+    font-family: "Antic Didone"; 
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+h3{ 
+    font-family: "Antic Didone"; 
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+p{ 
+    font-family: "Rajdhani"; 
+    color: rgb(85, 36, 0);
+    font-weight: 300;
+    font-size: 20px;
+
+}
+
+.first{
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 250px;
+
+}
+
+.second{
+    text-align: right;
+    margin-left: 250px;
+    margin-right: 25px ;
+
+}
+
+.third{
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 250px;
+
+}
+
+body{
+    background-color: #fff8c9bf;
+    margin-left: 250px;
+    margin-right: 250px
+}
+
+display{
+    height: 1600px;
+    width: 2560px;
+}
