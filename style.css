@@ -1,26 +1,371 @@
-li{
-    color:green;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold; 
-    font-style: italic; 
-    text-align: left;
-    /* text-align: right, left, center is used to change the position of a particular text. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1{ 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    font-size: 100px;
-    color:rgba(13, 169, 81, 0.803); 
-    margin-bottom: 10px;
-    padding-bottom: 5px; 
-    line-height: 60px;
-    /* used to comment in css */
-    text-align: center;
+html{
+    height: 100%;
+    width: 100%
 }
 
 body{
-    background-color:blanchedalmond;
-    width: 1000px; 
-    margin: 0 auto 0 auto; 
+    background-image: linear-gradient(rgb(245 218 223), white);
+    height: 100%;
+    width: 100%
+}
+
+h1{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: rgb(194 0 35);
+    text-align: center;
+    text-decoration: none; 
+    font-size: 75px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(194 0 35);
+}
+
+h2{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: thin;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+header{
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+
+}
+
+nav ul li{ 
+    border: none;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+nav a{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px black;
+    color: black;
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-decoration: none;   
+    z-index: 100;
+    border-style:  none solid solid none;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(194 0 35);
+    border: 1px rgb(194 0 35);
+    text-decoration: none;
+    z-index: 100;
+    border-style: dashed; 
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: "width" 100;
+}
+
+#introduction{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.intro-header{
+    text-align: center;
+    position: relative;
+    top: 175px;
+    background-color:rgba(194, 0, 35, 0.15);
+    margin-left: 615px;
+    margin-right: 615px;
+    padding: 7px;
+    border: 1px black;
+    border-style: dotted;
+}
+
+.flex-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.flexitem{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.video{
+    width: 800px;
+    position: relative;
+    top: 250px;
+    justify-content: center;
+    left: 50px;
+    border: 1px dotted;
+    border-color: black;
+
+}
+
+p{
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: light;
+    font-variation-settings: "width" 80;
+    font-size: 20px;
+    position: relative;
+    line-height: 25px;
+}
+
+.intro-paragraphs{
+    position: relative;
+    top: 275px;
+    margin-left: 150px;
+    margin-right: 50px;
+    background-color:rgba(255, 255, 255, 0.35);
+    padding: 10px;
+
+}
+
+#analysis{
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    position: relative;
+    height: 3900px;
+    background-image: linear-gradient(white, rgb(245 218 223));
    
 }
+
+.analysis-header{
+    text-align: center;
+    position: relative;
+    top: 175px;
+    background-color:rgba(194, 0, 35, 0.15);
+    margin-left: 615px;
+    margin-right: 615px;
+    padding: 7px;
+    border: 1px black;
+    border-style: dotted;
+
+}
+
+.design-header{
+    text-align: center;
+    position: relative;
+    top: 175px;
+    background-color:rgba(194, 0, 35, 0.15);
+    margin-left: 615px;
+    margin-right: 615px;
+    padding: 7px;
+    border: 1px black;
+    border-style: dotted;
+}
+
+h3{
+    font-family: "Lato", sans-serif;
+    font-weight: 250;
+    font-style: thin;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.Content{
+    position: relative;
+    top: 185px;
+}
+
+.Use{
+    position: relative;
+    width: 650px;
+    top: 175px;
+    left: 50px;
+}
+
+.content-paragraph{
+    position: relative;
+    width: 650px;
+    left: 725px;
+    top: -220px;
+    background-color: rgba(245, 218, 223, 0.25);
+    padding: 10px;
+    font-size: 16px;
+    line-height: 22px;
+
+} 
+
+.Studies{
+    position: relative;
+    width: 650px;
+    top: -177px;
+    left:50px;
+}
+
+.Key-Ingredients{
+    position: relative;
+    width: 650px;
+    top: -175px;
+    left:75px;
+}
+
+.Filters{
+    position: relative;
+    width: 650px;
+    top: -125px;
+    left:50px;
+}
+
+.Reviews{
+    position: relative;
+    width: 650px;
+    top: -125px;
+    left:75px;
+}
+
+.content-images{ 
+    position: relative;
+    top: 50px;
+}
+
+.design{
+    position: relative;
+    top: 185px;
+}
+
+.Navigation{
+    position: relative;
+    width: 650px;
+    top: -170px;
+    left: 725px;
+}
+
+.design-paragraph{
+    position: relative;
+    width: 650px;
+    left: 50px;
+    display: block;
+    margin-right: 800px;
+    top: 255px;
+    background-color: rgba(245, 218, 223, 0.25);
+    padding: 10px;
+    font-size: 16px;
+    line-height: 22px;
+
+} 
+
+.First-Page{
+    position: relative;
+    width: 650px;
+    top: 320px;
+    left:-608px;
+}
+
+.Second-Page{
+    position: relative;
+    width: 650px;
+    top: -50px;
+    left: 720px;
+}
+
+.design-images{
+    position: relative;
+    top: -50px;
+}
+
+.interactivity{
+    position: relative;
+    top: 185px;
+}
+
+.interactvite-paragraph{
+        position: relative;
+        margin-left: 50px;
+        margin-right: 50px;
+        top: 250px;
+        background-color:rgba(255, 255, 255, 0.35);
+        padding: 10px;
+}
+
+.interactive-video{
+    height: 350px;
+    position: relative;
+    top: 222px;
+    justify-content: center;
+    left: 712px;
+    border: 1px dotted;
+    border-color: black;
+}
+
+.cleanser-video{
+    height: 350px;
+    left: 50px;
+    top: -452px;
+    position: relative;
+    border: 1px dotted;
+    border-color: black;
+}
+
+#evaluation{
+    background-image: linear-gradient(rgb(245 218 223), white);
+    height: 1100px;
+    width: 100%
+}
+
+.evaluation-header{
+    text-align: center;
+    position: relative;
+    top: 175px;
+    background-color:rgba(194, 0, 35, 0.15);
+    margin-left: 615px;
+    margin-right: 615px;
+    padding: 7px;
+    border: 1px black;
+    border-style: dotted;
+}
+
+.Diversity{
+    position: relative;
+    width: 650px;
+    left: 725px;
+    top: -390px;
+}
+
+.Footer{
+    position: relative;
+    width: 650px;
+    left: 71px;
+    top: -140px;
+}
+
+.evaluation-paragraph{
+    position: relative;
+    left: 50px;
+    top: 230px;
+    background-color: rgba(255, 255, 255, 0.35);
+    margin-right: 800px;
+    padding: 10px;
+}
+
+
+
+
