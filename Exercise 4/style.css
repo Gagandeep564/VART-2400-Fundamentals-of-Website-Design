@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-image: radial-gradient(white, rgba(94, 187, 97, 0.782));
+}
+
+h1{
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    z-index: 1000;
+    color: rgba(0, 0, 0, 0.587);
+}
+
+#orb-one{
+    width: 100%;
+    height: 100vh;
+    border-radius: 50%;
+    background-image: radial-gradient(white, rgba(149, 230, 91, 0.804));
+    color: black;
+    
+    animation-name: shape;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+#orb-two{
+    width: 93%;
+    height: 93vh;
+    border-radius: 50%;
+    background-image: radial-gradient(white, rgba(255, 235, 54, 0.939));
+    opacity: 0.4;
+    animation-name: shape;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+#orb-three{
+    width: 85%;
+    height: 85vh;
+    border-radius: 60%;
+    background-image: radial-gradient(white, rgba(255, 98, 161, 0.636));
+    opacity: 0.65;
+    animation-name: shape;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 4;
+}
+#orb-four{
+    width: 77%;
+    height: 77vh;
+    border-radius: 70%;
+    background-image: radial-gradient(rgb(246, 193, 211), rgba(255, 98, 158, 0.859));
+    opacity: 0.55;
+    animation-name: shape;
+    animation-duration: 40s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 5;
+}
+@keyframes shape{
+    0%{
+        border-radius: 50% 55% 60% 65%;
+    }
+    50%{
+        border-radius: 55% 40% 45% 50%;
+    }
+    100%{
+        border-radius:40% 45% 30% 35%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body{
+        background-image: radial-gradient(white,rgba(14, 230, 219, 0.762));
+        opacity: 0.9;
+    }
+    #orb-one{
+        background-image: radial-gradient(white,rgb(82, 250, 155));
+        opacity: 0.8;
+    }
+    #orb-two{
+        background-image: radial-gradient(white,rgba(188, 244, 75, 0.864));
+        opacity: 0.7;
+    }
+    #orb-three{
+        background-image: radial-gradient(white, rgba(246, 230, 84, 0.927));
+        opacity: 0.6;
+    }
+    #orb-four{
+        background-image: radial-gradient(rgb(255, 253, 127), #ffff00df);
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        background-image: radial-gradient(rgba(183, 146, 146, 0.543), rgb(49, 8, 52));
+    }
+    #orb-one{
+        background-image: radial-gradient(rgba(187, 166, 151, 0.804), rgba(88, 15, 23, 0.909));
+        opacity: 0.9;
+    }
+    #orb-two{
+        background-image: radial-gradient(white,rgba(171, 38, 31, 0.794));
+        opacity: 0.7;
+    }
+    #orb-three{
+        background-image: radial-gradient(white, rgba(217, 117, 30, 0.918));
+        opacity: 0.6;
+    }
+    #orb-four{
+        background-image: radial-gradient(rgb(255, 193, 107), #ffbb00e0);
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-image: radial-gradient(rgba(85, 105, 148, 0.77), rgba(4, 4, 36, 0.997));
+        opacity: 0.8;
+    }
+    #orb-one{
+        background-image: radial-gradient(rgba(111, 139, 174, 0.804), rgba(18, 17, 112, 0.909));
+        opacity: 0.85;
+    }
+    #orb-two{
+        background-image: radial-gradient(rgba(153, 169, 190, 0.725),rgba(0, 61, 205, 0.865));
+        opacity: 0.5;
+    }
+    #orb-three{
+        background-image: radial-gradient(white, rgba(37, 154, 232, 0.918));
+        opacity: 0.6;
+    }
+    #orb-four{
+        background-image: radial-gradient(rgba(255, 255, 255, 0.725), #93f8ffe0);
+        opacity: 0.8;
+    }
+}
+
+
