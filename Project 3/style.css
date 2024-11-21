@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#introduction{
+    background-image: url(Images/Background.JPG);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15vh;
+    color:rgb(54, 26, 0);
+}
+
+h2{
+    font-family: "Smythe", serif;
+    font-weight: 300;
+    font-style: normal;
+    color:rgb(54, 26, 0);
+    font-size: 3.5vh;
+}
+
+p{
+    font-family: "Smythe", serif;
+    font-weight: 300;
+    font-style: normal;
+    color:rgb(54, 26, 0);
+    font-size: 5vh;
+}
+
+#beginning{
+    background-image: url(Images/Background.JPG);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    background-color: rgb(213, 213, 213);
+    position: relative;
+}
+
+.beginning{
+    position: relative;
+}
+
+#middle{
+    background-image: url(Images/Background.JPG);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    background-color: rgb(213, 213, 213);
+    position: relative;
+}
+
+.middle{
+    position: relative;
+}
+
+.eye-one{
+    width: 200px;
+    position: relative;
+    left: 400px;
+    top: 75px;
+    rotate: 45deg;
+}
+
+#end{
+    background-image: url(Images/Background.JPG);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(213, 213, 213);
+}
+
+.tear-one{
+    position: relative;
+    width: 250px;
+    top: -200px;
+    left: -300px;
+}
+
+.tear-two{
+    position: relative;
+    width: 175px;
+    top: -100px;
+}
+
+.beginning-paragraph{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -400px;
+}
+
+.middle-paragraph{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -500px;
+}
+
+.tear-three{
+    position: relative;
+    width: 115px;
+    left: 1150px;
+    top: -300px;
+}
+.tear-four{
+    position: relative;
+    width: 300px;
+    left: 300px;
+}
+
+.tear-five{
+    position: relative;
+    width: 420px;
+    top: -400px;
+    left: 600px;
+}
+
+.tear-six{
+    position: relative;
+    rotate: 270deg;
+    width: 400px;
+    left: -600px;
+    top: -500px;
+
+}
+
+.tear-seven{
+    position: relative;
+    width: 450px;
+    top: -100px;
+    left: -250px;
+}
+
+.tear-eight{
+    position: relative;
+    width: 500px;
+    right: -470px;
+    bottom: 160px;
+}
+
+.eye-two{
+        width: 150px;
+        position: relative;
+        left: 150px;
+        top: -600px;
+        rotate: 220deg;
+}
+
+.eye-three{
+    width: 75px;
+    position: relative;
+    left: -150px;
+    top: -600px;
+    rotate: 215deg;
+}
+
+.eye-four{
+        width: 125px;
+        position: relative;
+        left: -570px;
+        top: 1200px;
+        rotate: 30deg;
+        animation-name: moveeye;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-delay:0s;
+        animation-iteration-count: infinite;
+        z-index: 100;
+}
+
+@keyframes moveeye{
+    0%{
+        transform: rotate(0deg)
+        translateY(100px) rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg)
+        translateY(100px) rotate(-360deg);
+    }
+}
+    
+.eye-five{
+        width: 150px;
+        position: relative;
+        left: 500px;
+        top: 700px;
+        rotate: 400deg;
+}
+
+.eye-six{
+    width: 100px;
+    position: relative;
+    left: 300px;
+    top: 600px;
+    rotate: 400deg;
+}
+
+.hands{
+    width: 1000px;
+    position: relative;
+    top: -1000px;
+    left: 600px
+}
+
+.end-paragraph{
+    position: relative;
+    bottom: 1000px;
+}
