@@ -51,7 +51,7 @@ p{
 }
 
 #beginning{
-    background-image: url(Images/Background.JPG);
+    background-image: url(Images/background.JPG);
     background-size: cover;
     height: 100vh;
     background-repeat: repeat;
