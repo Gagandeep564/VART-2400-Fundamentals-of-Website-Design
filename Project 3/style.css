@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#introduction{
+    background-image: url(Images/background.JPG);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+h1{
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15vh;
+    color:rgb(54, 26, 0);
+    padding-top: 300px;
+}
+
+a{
+    color: rgb(54, 26, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(105, 0, 0);
+}
+
+h2{
+    font-family: "Smythe", serif;
+    font-weight: 300;
+    font-style: normal;
+    color:rgb(54, 26, 0);
+    font-size: 3.5vh;
+}
+
+p{
+    font-family: "Smythe", serif;
+    font-weight: 300;
+    font-style: normal;
+    color:rgb(54, 26, 0);
+    font-size: 25px;
+}
+
+#beginning{
+    background-image: url(Images/Background.JPG);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    position: relative;
+}
+
+.beginning{
+    position: relative;
+}
+
+#middle{
+    background-image: url(Images/background.JPG);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    position: relative;
+}
+
+.middle{
+    position: relative;
+}
+
+.end{
+    position: relative;
+}
+
+.eye-one{
+    width: 175px;
+    position: relative;
+    left: -300px;
+    top: -150px;
+    rotate: 42deg;
+    z-index: 10000;
+}
+
+.eye-nine{
+    width: 65px;
+    position: relative;
+    left: -450px;
+    top: -250px;
+    rotate: -47deg;
+    z-index: 10000;
+    transform: scale(-1, 1);
+
+}
+
+#end{
+    background-image: url(Images/background.JPG);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tear-one{
+    position: absolute;
+    width: 250px;
+    left: -0px;
+}
+
+.tear-two{
+    position: absolute;
+    width: 175px;
+    top: 100px;
+}
+
+.beginning-paragraph{
+    position: absolute;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    top: 150px;
+    z-index: 10000;
+    flex-direction: column;
+}
+
+.not{
+    font-size: 45px;
+}
+
+.middle-paragraph{
+        position: relative;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-left: 275px;
+        margin-right: 500px;
+        top: 0px;
+        z-index: 10000;
+        font-size: 25px;
+        top:-200px;
+}
+
+.tear-three{
+    position: absolute;
+    width: 150px;
+    right: 0px;
+    top: 100px;
+}
+
+.tear-four{
+    position: absolute;
+    width: 500px;
+    left: 900px;
+    top: 1805px;
+    rotate: 220deg;
+}
+
+.tear-five{
+    position: absolute;
+    width: 475px;
+    top: -420px;
+    left: 900px;
+}
+
+.tear-six{
+    position: absolute;
+    rotate: 270deg;
+    width: 400px;
+    left: -75px;
+    top: 1900px;
+}
+
+.tear-seven{
+    position: absolute;
+    width: 650px;
+    top: 2200px;
+    left: 0px;
+}
+
+.tear-eight{
+    position: absolute;
+    width: 1000px;
+    right: 0px;
+    top: 2410px;
+}
+
+.eye-two{
+    width: 225px;
+    position: absolute;
+    left: 1100px;
+    top: 150px;
+    rotate: 220deg;
+}
+
+.eye-three{
+    width: 125px;
+    position: absolute;
+    left: 880px;
+    top: 275px;
+    rotate: 470deg;
+    transform: scale(-1, 1);
+}
+
+.eye-four{
+        width: 125px;
+        position: absolute;
+        right: 0px;
+        left: 500px;
+        bottom: 0px;
+        top: 0px;
+        rotate: -55deg;
+        z-index: 1000;
+        transform: scale(-1, 1);
+
+}
+    
+.eye-five{
+        width: 200px;
+        position: absolute;
+        left: 700px;
+        top: -100px;
+        bottom: 0px;
+        rotate: 400deg;
+        z-index: 1000;
+}
+
+.eye-six{
+    width: 125px;
+    position: absolute;
+    left: 400px;
+    top: -850px;
+    rotate: 400deg;
+}
+
+.eye-seven{
+    width: 50px;
+    position: absolute;
+    left: 300px;
+    top: -750px;
+    rotate: 220deg;
+}
+
+.together{
+    position: absolute;
+    animation-name: moveeye;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+    left: 0px;
+}
+
+@keyframes moveeye{
+    0%{
+        transform: rotate(0deg)
+        translateY(100px) rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg)
+        translateY(100px) rotate(-360deg);
+    }
+}
+
+
+.hands{
+    width: 1200px;
+    position: absolute;
+    top: 2325px;
+    left: 300px
+}
+
+.end-paragraph{
+    position: relative;
+    bottom: 0px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 700px;
+    z-index: 10000;
+    font-size: 25px;
+    top: 75px;
+    bottom: 20px;
+}
+
+.together-two{
+    position: absolute;
+    animation-name: moveeye;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+    left: 400px;
+    top: 3000px;
+}
+
+@keyframes moveeye{
+    0%{
+        transform: rotate(0deg)
+        translateY(100px) rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg)
+        translateY(100px) rotate(-360deg);
+    }
+}
+
+.tear-ten{
+    position: absolute;
+    top: -250px;
+    left: 600px;
+    width: 400px;
+    rotate: 90deg;
+}
