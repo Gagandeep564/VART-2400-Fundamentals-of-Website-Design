@@ -89,6 +89,14 @@ p{
     z-index: 10000;
 }
 
+.eye-eleven{
+    width: 250px;
+    position: absolute;
+    rotate: 32deg;
+    top: 400px;
+    right: 450px;
+}
+
 .eye-nine{
     width: 65px;
     position: relative;
@@ -245,6 +253,22 @@ p{
     rotate: 400deg;
 }
 
+.eye-twelve{
+    width: 150px;
+    position: absolute;
+    rotate: 45deg;
+    top: 2500px;
+    right: 200px;
+    z-index: 10000;
+    animation-name: moveeye;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
 .eye-seven{
     width: 50px;
     position: absolute;
@@ -328,4 +352,11 @@ p{
     left: 600px;
     width: 400px;
     rotate: 90deg;
+}
+
+.tear-nine{
+    position: absolute;
+    width: 350px;
+    top:2100px;
+    left: 600px;
 }
