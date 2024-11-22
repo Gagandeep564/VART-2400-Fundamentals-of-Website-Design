@@ -329,6 +329,7 @@ p{
     animation-timing-function: linear;
     animation-delay:0s;
     animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     z-index: 100;
     left: 400px;
     top: 3000px;
