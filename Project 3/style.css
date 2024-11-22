@@ -5,16 +5,15 @@
 }
 
 #introduction{
-    background-image: url(Images/Background.JPG);
+    background-image: url(Images/background.JPG);
     background-size: cover;
     height: 100vh;
     background-repeat: repeat;
     background-position: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    position: relative;
 }
 
 h1{
@@ -23,6 +22,16 @@ h1{
     font-style: normal;
     font-size: 15vh;
     color:rgb(54, 26, 0);
+    padding-top: 300px;
+}
+
+a{
+    color: rgb(54, 26, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(105, 0, 0);
 }
 
 h2{
@@ -38,7 +47,7 @@ p{
     font-weight: 300;
     font-style: normal;
     color:rgb(54, 26, 0);
-    font-size: 5vh;
+    font-size: 25px;
 }
 
 #beginning{
@@ -47,7 +56,6 @@ p{
     height: 100vh;
     background-repeat: repeat;
     background-position: center;
-    background-color: rgb(213, 213, 213);
     position: relative;
 }
 
@@ -56,12 +64,11 @@ p{
 }
 
 #middle{
-    background-image: url(Images/Background.JPG);
+    background-image: url(Images/background.JPG);
     background-size: cover;
     height: 100vh;
     background-repeat: repeat;
     background-position: center;
-    background-color: rgb(213, 213, 213);
     position: relative;
 }
 
@@ -69,16 +76,32 @@ p{
     position: relative;
 }
 
-.eye-one{
-    width: 200px;
+.end{
     position: relative;
-    left: 400px;
-    top: 75px;
-    rotate: 45deg;
+}
+
+.eye-one{
+    width: 175px;
+    position: relative;
+    left: -300px;
+    top: -150px;
+    rotate: 42deg;
+    z-index: 10000;
+}
+
+.eye-nine{
+    width: 65px;
+    position: relative;
+    left: -450px;
+    top: -250px;
+    rotate: -47deg;
+    z-index: 10000;
+    transform: scale(-1, 1);
+
 }
 
 #end{
-    background-image: url(Images/Background.JPG);
+    background-image: url(Images/background.JPG);
     background-size: cover;
     height: 100vh;
     background-repeat: repeat;
@@ -87,108 +110,158 @@ p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(213, 213, 213);
 }
 
 .tear-one{
-    position: relative;
+    position: absolute;
     width: 250px;
-    top: -200px;
-    left: -300px;
+    left: -0px;
 }
 
 .tear-two{
-    position: relative;
+    position: absolute;
     width: 175px;
-    top: -100px;
+    top: 100px;
 }
 
 .beginning-paragraph{
-    position: relative;
-    display: flex;
+    position: absolute;
+    display: block;
     align-items: center;
     justify-content: center;
-    top: -400px;
+    margin-left: 200px;
+    margin-right: 200px;
+    top: 150px;
+    z-index: 10000;
+    flex-direction: column;
+}
+
+.not{
+    font-size: 45px;
 }
 
 .middle-paragraph{
         position: relative;
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: center;
-        top: -500px;
+        margin-left: 275px;
+        margin-right: 500px;
+        top: 0px;
+        z-index: 10000;
+        font-size: 25px;
+        top:-200px;
 }
 
 .tear-three{
-    position: relative;
-    width: 115px;
-    left: 1150px;
-    top: -300px;
+    position: absolute;
+    width: 150px;
+    right: 0px;
+    top: 100px;
 }
+
 .tear-four{
-    position: relative;
-    width: 300px;
-    left: 300px;
+    position: absolute;
+    width: 500px;
+    left: 900px;
+    top: 1805px;
+    rotate: 220deg;
 }
 
 .tear-five{
-    position: relative;
-    width: 420px;
-    top: -400px;
-    left: 600px;
+    position: absolute;
+    width: 475px;
+    top: -420px;
+    left: 900px;
 }
 
 .tear-six{
-    position: relative;
+    position: absolute;
     rotate: 270deg;
     width: 400px;
-    left: -600px;
-    top: -500px;
-
+    left: -75px;
+    top: 1900px;
 }
 
 .tear-seven{
-    position: relative;
-    width: 450px;
-    top: -100px;
-    left: -250px;
+    position: absolute;
+    width: 650px;
+    top: 2200px;
+    left: 0px;
 }
 
 .tear-eight{
-    position: relative;
-    width: 500px;
-    right: -470px;
-    bottom: 160px;
+    position: absolute;
+    width: 1000px;
+    right: 0px;
+    top: 2410px;
 }
 
 .eye-two{
-        width: 150px;
-        position: relative;
-        left: 150px;
-        top: -600px;
-        rotate: 220deg;
+    width: 225px;
+    position: absolute;
+    left: 1100px;
+    top: 150px;
+    rotate: 220deg;
 }
 
 .eye-three{
-    width: 75px;
-    position: relative;
-    left: -150px;
-    top: -600px;
-    rotate: 215deg;
+    width: 125px;
+    position: absolute;
+    left: 880px;
+    top: 275px;
+    rotate: 470deg;
+    transform: scale(-1, 1);
 }
 
 .eye-four{
         width: 125px;
-        position: relative;
-        left: -570px;
-        top: 1200px;
-        rotate: 30deg;
-        animation-name: moveeye;
-        animation-duration: 15s;
-        animation-timing-function: linear;
-        animation-delay:0s;
-        animation-iteration-count: infinite;
-        z-index: 100;
+        position: absolute;
+        right: 0px;
+        left: 500px;
+        bottom: 0px;
+        top: 0px;
+        rotate: -55deg;
+        z-index: 1000;
+        transform: scale(-1, 1);
+
+}
+    
+.eye-five{
+        width: 200px;
+        position: absolute;
+        left: 700px;
+        top: -100px;
+        bottom: 0px;
+        rotate: 400deg;
+        z-index: 1000;
+}
+
+.eye-six{
+    width: 125px;
+    position: absolute;
+    left: 400px;
+    top: -850px;
+    rotate: 400deg;
+}
+
+.eye-seven{
+    width: 50px;
+    position: absolute;
+    left: 300px;
+    top: -750px;
+    rotate: 220deg;
+}
+
+.together{
+    position: absolute;
+    animation-name: moveeye;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+    left: 0px;
 }
 
 @keyframes moveeye{
@@ -202,31 +275,57 @@ p{
         translateY(100px) rotate(-360deg);
     }
 }
-    
-.eye-five{
-        width: 150px;
-        position: relative;
-        left: 500px;
-        top: 700px;
-        rotate: 400deg;
-}
 
-.eye-six{
-    width: 100px;
-    position: relative;
-    left: 300px;
-    top: 600px;
-    rotate: 400deg;
-}
 
 .hands{
-    width: 1000px;
-    position: relative;
-    top: -1000px;
-    left: 600px
+    width: 1200px;
+    position: absolute;
+    top: 2325px;
+    left: 300px
 }
 
 .end-paragraph{
     position: relative;
-    bottom: 1000px;
+    bottom: 0px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 700px;
+    z-index: 10000;
+    font-size: 25px;
+    top: 75px;
+    bottom: 20px;
+}
+
+.together-two{
+    position: absolute;
+    animation-name: moveeye;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+    left: 400px;
+    top: 3000px;
+}
+
+@keyframes moveeye{
+    0%{
+        transform: rotate(0deg)
+        translateY(100px) rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg)
+        translateY(100px) rotate(-360deg);
+    }
+}
+
+.tear-ten{
+    position: absolute;
+    top: -250px;
+    left: 600px;
+    width: 400px;
+    rotate: 90deg;
 }
