@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f7f2e9;
+    width: 100%
+}
+
+header{
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+#Introduction{
+    height: 100vh;
+}
+
+h1{
+    font-family: "Antic Didone";
+    color: #000643;
+    font-size: 75px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3{
+    font-family: "Antic Didone";
+    color: #000643;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 200px;
+}
+
+nav ul li{ 
+    border: none;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    display: inline-block;
+    margin-top: 125px;
+}
+
+nav a{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px #6c0314; 
+    color: #6c0314; 
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-decoration: none;   
+    z-index: 100;
+    border-style:  none solid solid none;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #9c041d; 
+    border: 1px #9c041d; 
+    text-decoration: none;
+    z-index: 100;
+    border-style: dashed; 
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: "width" 100;
+}
+
+a{
+    color:#000643;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color:#6c0314;
+    text-decoration: none;
+}
+
+#Projects{
+    width: 100%; 
+    position: relative;
+}
+
+h2{
+    font-family: "Antic Didone";
+    color: #000643;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+}
+
+p{
+    font-family: Quicksand;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: light;
+    font-size: 20px;
+    color: #000000e8;
+    padding: 10px
+}
+
+.project-one,
+.project-two,
+.project-three,
+.activity-one,
+.activity-two,
+.activity-three{
+    position: absolute;
+    text-align: center;
+    width: auto;
+    margin-top: 35px;
+    padding: 5px;
+    background-color:rgba(92, 164, 251, 0.12);
+    border:1px #000643;
+    border-style: dashed;
+}
+
+.project-one{
+    margin-left: 550px;
+    margin-right: 550px;
+}
+
+.project-two{
+    margin-left: 515px;
+    margin-right: 515px;
+}
+
+.project-three{
+    margin-left: 593px;
+    margin-right: 593px;
+}
+
+.activity-one{
+    margin-left: 390px;
+    margin-right: 390px;
+}
+
+.activity-two{
+    margin-left: 613px;
+    margin-right: 613px;
+}
+
+.activity-three{
+    margin-left: 515px;
+    margin-right: 515px;
+}
+#project-one,
+#project-two,
+#project-three,
+#activity-one,
+#activity-two,
+#activity-three{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flexbox;
+}
+
+.project-one-paragraph,
+.project-two-paragraph,
+.project-three-paragraph,
+.activity-one-paragraph,
+.activity-two-paragraph,
+.activity-three-paragraph{
+    position: absolute;
+    background-color:rgba(255, 255, 255, 0.435);
+    z-index: 10;
+    margin-left: 900px;
+    margin-right: 50px;
+    margin-top: 250px;
+}
+
+.project-one-paragraph,
+.project-three-paragraph,
+.activity-one-paragraph,
+.activity-two-paragraph,
+.activity-three-paragraph{
+    margin-top: 300px;
+}
+
+.activity-two-paragraph{
+    margin-top: 325px;
+    margin-right: 125px;
+}
+
+.project-two-paragraph{
+    margin-top: 325px;
+}
+
+.project-one-image,
+.project-two-image,
+.project-three-image, 
+.activity-one-image,
+.activity-two-image,
+.activity-three-image,
+.activity-three-second-image{
+    position: absolute;
+    width: 800px;
+    margin-top: 250px;
+    margin-left: 50px;
+}
+
+.activity-two-image{
+    margin-left: 125px;
+}
+
+.activity-two-image{
+    width: 700px;
+}
+
+.activity-three-image,
+.activity-three-second-image{
+    height: 400px;
+    margin-top: 250px;
+    width: auto;
+    margin-left: 30px;
+}
+
+.activity-three-image{
+    margin-left: 540px;
+}
+
+#Activities{
+    width: 100%; 
+    position: relative;
+}
